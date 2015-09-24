@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane nodeOrientation="LEFT_TO_RIGHT" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.RootLayoutController">
+   <top>
+      <AnchorPane BorderPane.alignment="TOP_CENTER">
+         <children>
+            <HBox id="menu_hbox" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@../../../bin/application/view/ShadyTheme.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <SplitMenuButton fx:id="menu_media" alignment="TOP_LEFT" graphicTextGap="0.0" mnemonicParsing="false" text="Media" HBox.hgrow="ALWAYS">
+                     <items>
+                        <MenuItem fx:id="mediaAdd" mnemonicParsing="false" onAction="#addMediaAction">
+                           <graphic>
+                              <Label graphicTextGap="0.0" text="Add Media..." />
+                           </graphic></MenuItem>
+                        <MenuItem fx:id="mediaFolderAdd" mnemonicParsing="false">
+                           <graphic>
+                              <Label text="Add Folder" />
+                           </graphic></MenuItem>
+                        <MenuItem fx:id="deleteMedia" mnemonicParsing="false" onAction="#deleteMediaAction">
+                           <graphic>
+                              <Label text="Delete" />
+                           </graphic></MenuItem>
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton fx:id="menu_album" alignment="TOP_LEFT" mnemonicParsing="false" text="Album" HBox.hgrow="ALWAYS">
+                     <items>
+                        <MenuItem fx:id="albumCreate" mnemonicParsing="false">
+                           <graphic>
+                              <Label text="Create" />
+                           </graphic></MenuItem>
+                        <MenuItem fx:id="albumEdit" mnemonicParsing="false">
+                           <graphic>
+                              <Label text="Edit" />
+                           </graphic></MenuItem>
+                        <MenuItem fx:id="albumDelete" mnemonicParsing="false">
+                           <graphic>
+                              <Label text="Delete" />
+                           </graphic></MenuItem>
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton fx:id="menu_artist" alignment="TOP_LEFT" mnemonicParsing="false" text="Artist" HBox.hgrow="ALWAYS">
+                     <items>
+                        <MenuItem fx:id="artistCreate" mnemonicParsing="false">
+                           <graphic>
+                              <Label text="Create" />
+                           </graphic></MenuItem>
+                        <MenuItem fx:id="artistEdit" mnemonicParsing="false">
+                           <graphic>
+                              <Label text="Edit" />
+                           </graphic></MenuItem>
+                        <MenuItem fx:id="artistDelete" mnemonicParsing="false">
+                           <graphic>
+                              <Label text="Delete" />
+                           </graphic></MenuItem>
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton fx:id="menu_genre" alignment="TOP_LEFT" mnemonicParsing="false" text="Genre" HBox.hgrow="ALWAYS">
+                     <items>
+                        <MenuItem fx:id="genreCreate" mnemonicParsing="false">
+                           <graphic>
+                              <Label text="Create" />
+                           </graphic></MenuItem>
+                        <MenuItem fx:id="genreDelete" mnemonicParsing="false">
+                           <graphic>
+                              <Label text="Delete" />
+                           </graphic></MenuItem>
+                     </items>
+                  </SplitMenuButton>
+                  <Button fx:id="btn_about" minWidth="50.0" mnemonicParsing="false" text="About" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

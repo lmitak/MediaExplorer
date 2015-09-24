@@ -1,0 +1,60 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.background{
+	-fx-background-color: #181712;
+}
+
+#hboxBar{
+	/*-fx-background-color: linear-gradient(rgba(0,0,0,0.0) 94%, rgba(0,0,0,0.2) 96%, rgba(0,0,0,0.7) 100%);*/
+	 -fx-background-color: rgba(0,0,0,0.4);
+}
+.button{
+	-fx-border-width: 0;
+}
+
+#menu_hbox .split-menu-button{
+	-fx-background-color: rgb(255,255,255);
+	-fx-border-width: 0px 1px 1px 1px;
+	
+	-fx-border-radius: 3px;
+	-fx-border-color: rgba(15,15,15,0.1);
+}
+
+#menu_hbox{
+	-fx-background-color: rgba(255,255,255,1.0)
+}
+
+#menu_hbox .button{
+	-fx-background-color: rgb(255,255,255);
+	-fx-border-width: 0px 1px 2px 1px;
+	-fx-border-radius: 3px;
+	-fx-border-color: rgba(15,15,15,0.1);
+}
+/*.split-menu-button > .label:hover,*/
+.split-menu-button > .label,
+.split-menu-button > .arrow-button{
+	-fx-background-color: rgb(255,255,255);
+}
+.split-menu-button > .arrow-button{
+	-fx-border-width: 1px;
+	-fx-border-radius: 3px;
+	-fx-border-color: rgba(15,15,15,0.1);
+}
+.split-menu-button > .label{
+	-fx-border-width: 0.0px 1px 1px 1px;
+}
+.split-menu-button > .arrow-button{
+	
+}
+.split-menu-button > .arrow-button > .arrow{
+	
+}
+
+/* 
+.split-menu-button:armed > .label,
+.split-menu-button > .arrow-button:pressed,
+.split-menu-button:showing > .arrow-button{
+	-fx-color: -fx-pressed-base;
+}*/
+
+

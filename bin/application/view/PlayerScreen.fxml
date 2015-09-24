@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="background" stylesheets="@ShadyTheme.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.PlayerScreenController">
+   <children>
+      <MediaView fx:id="view" fitHeight="200.0" fitWidth="200.0" StackPane.alignment="CENTER" />
+      <AnchorPane>
+         <children>
+            <VBox id="hboxBar" stylesheets="@../../../bin/application/view/ShadyTheme.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <HBox spacing="5.0">
+                     <children>
+                        <Label fx:id="labelCurrentTime" text="0:00" textFill="WHITE" />
+                        <Slider fx:id="durationSlider" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="labelEndTime" text="2:55" textFill="WHITE" />
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="BOTTOM_CENTER" spacing="5.0" stylesheets="@ShadyTheme.css">
+                     <children>
+                        <Button fx:id="btnPrev" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#playBtnHandle" prefHeight="25.0" prefWidth="25.0" />
+                        <Button fx:id="btnPlay" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#playBtnHandle" prefHeight="25.0" prefWidth="25.0" />
+                        <Button fx:id="btnNext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" />
+                        <Button fx:id="btnRepeat" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleRepeatBtn" prefHeight="25.0" prefWidth="25.0" />
+                        <Button fx:id="btnSpeaker" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#speakerImageHandler" prefHeight="25.0" prefWidth="25.0" />
+                        <Slider fx:id="volumeSlider" prefHeight="14.0" prefWidth="110.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" />
+                           </HBox.margin>
+                        </Slider>
+                        <Button fx:id="btnSwitchScreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchScreenHandle" prefHeight="25.0" prefWidth="25.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
